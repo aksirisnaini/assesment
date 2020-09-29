@@ -27,41 +27,62 @@ func bagi(angka1, angka2 int) int {
 
 func main() {
 	fmt.Println("Jalanin program")
+	var number = []int{
+		23,
+		45,
+		67,
+		54,
+		66,
+		19,
+		56,
+		78,
+		89,
+		44,
+		11,
+		22,
+		33,
+		44,
+		55,
+		66,
+		77,
+		88,
+		99,
+		23,
+		34,
+		32,
+		23,
+		12,
+	}
+
+	number2 := []int{
+		1,
+		2,
+		3,
+		5,
+	}
+
+	number3 := []int{
+		0,
+		2,
+		3,
+		4,
+	}
 	// number[0]
-	number := add(1, 2)
-	number2 := substract(10, 5)
-	number3 := pangkatdua(number2)
-	number4 := add(pangkatdua(8), pangkatdua(4))
-	// 8 dipangkat dua dikurangi hasil dari 10 dikurangi 2
-	number5 := substract(pangkatdua(8), substract(10, 2))
-	fmt.Println(number)
-	fmt.Println(number2)
-	fmt.Println(number3)
-	fmt.Println(number4)
-	fmt.Println(number5)
-	print(number)
-	print(number2)
-	
+
+	sum(number)
+	sum(number2)
+	sum(number3)
 }
 
-func print(a) {
-	fmt.Println("Halooo aku mau ngasih tau bahwa aku", a)
+func sum(a []int) int {
+	total := 0
+	for i := 0; i < len(a); i++ {
+		total += a[i]
+	}
+	fmt.Println("Totalnya adalah",total)
+	return total
 }
 
-func add(a int, b int) int {
-	result := a + b
-	return result
-}
-
-func substract( a int, b int) int {
-	result := a - b
-	return result
-}
-
-func pangkatdua(a int) int {
-	result := a * a
-	return result
-}
 // func main() {
 // 	var hasilTambah int
 // 	var hasilKurang int
