@@ -1,0 +1,71 @@
+postman
+
+Fitur di postman:
+1. Environment dan Global variabel.
+2. Generate code snippets berdasarkan request tertentu.
+3. Membuat Collection, untuk mempermudah mengatur beberapa request dijadikan dalam satu folder tertentu.
+4. Export/Import atau Sharing Collection.
+5. Collection Runner dan Scripting.
+
+Postman memungkinkan untuk membuat value suatu variabel bisa diset dengan beberapa cara :
+1. Menggunakan Environment dan Global variabel.
+2. Mendefinisikan variabel pada Pre-request Script menggunakan javascript.
+3. Data files, CSV file ataupun JSON file.
+
+Artinya, kita dapat melakukan beberapa skenario tes seperti, generate banyak data maupun melakukan insert banyak data ke database menggunakan API melalui postman.
+
+
+• New : membuat request baru/collection
+• Collection : manajemen tes request yang disimpan
+• Runner: tes secara otomatis collection yang tersimpan
+• History : menampilkan request sebelumnya yang pernah dikirim
+• Params: untuk menulis parameter yang dibutuhkan untuk request seperti key values
+• Body: bisa customize detail di request (untuk request POST)
+• Tests: terdapat script untuk eksekusi selama request (penting: untuk verif apabila status respon ok, data yang diambil sesuai dengan ekspektasi atau tidak)
+
+Terdapat berbagai method yang dapat digunakan, antara lain:
+• Method GET, menampilkan data dan menambahkan URI yang nantinya ditampung  pada action.
+• Method POST mengirimkan data langsung kepada action tanpa melalui URI sehingga method ini bersifat uncacheable (tidak dapat disimpan pada cache).
+• Method PUT untuk mengupdate data
+• Method DELETE untuk menghapus data.
+
+
+Tahapan untuk method get:
+1. Melihat endpoint
+2. Pilih method get
+3. Send
+4. Perhatikan status, time, dan size-nya.
+
+Tahapan untuk method post:
+1. Ketik endpointnya
+2. Pilih method post
+3. Pilih tab body
+4. Masukkan inputan yang dibutuhkan (form data/raw (ada JSON/text))
+
+HTTP Status Code
+
+Http Status code ini berfungsi untuk membantu kita dalam mengenali response balik dari API
+• 200, success
+• 201, created
+• 204, Artinya proses request sudah dilaksanakan, tetapi tidak menampilkan result apapun.
+• 400, bad request
+
+Test menggunakan Snippets:
+• status code 
+• time
+• variable
+• response body: is equal to a string
+• content type header check
+
+Membuat collection (supaya bisa di tes otomatis secara bersamaan di runner) :
+• new
+• ketik nama collection dan deskripsinya (opsional)
+• simpan request ke collection tersebut
+
+Menjalankan runner:
+1. Klik button runner, kemudian pilih collection dan request yang akan dites secara bersamaan, klik run.
+Atau
+2. Klik collection, kemudian pilih run. Pilih request yang akan ditest secara bersamaan, klik run.
+#perhatikan status, size, dan time
+
+Sumber referensi: https://learning.postman.com/docs/writing-scripts/script-references/test-examples/
