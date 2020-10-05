@@ -1,3 +1,5 @@
+Workspace: area dimana kita bisa mengelompokkan, organize, dan manage API collections
+
 response:
 body (di dalamnya terdapat actual body yang dikembalikan dari server. bisa dilihat di pretty format atau raw atau format lain yang tersedia)
 • status
@@ -22,10 +24,9 @@ result:
 • export result (JSON)
 • retry: mengulangi run dengan konfigurasi yang sama
 
-variables
-• elemen (data store) yang bisa berbeda values
+Variables: elemen (data store) yang bisa berbeda values
 
-WHY use variables
+Mengapa menggunakan variable?
 to reuse values at multiple places
 avoid repetition
 to avoid re-work when value changes
@@ -33,3 +34,39 @@ to avoid re-work when value changes
 penggunaan variable
 contoh: menambahkan url sebagai variable-nya
 menggunakan double curly braces {{}}
+penggunaan variable: collection dan environment
+
+Manage environment
+1. create environment
+2. create variable di environment (create global: create variable secara global)
+
+tips:
+jika menggunakan beberapa variavle dan ingin  melihat persis value dan effort selama test, bisa menggunakan postman console (view --> show postman console)
+setiap kali melakukan request, log nya akan tersimpan di postman console
+
+1. How to get variables through scripts
+2. How to set variables through scripts
+
+//pm.variables.get();
+//pm.variables.set();
+
+//pm.globals.get();
+//pm.globals.set();
+
+//pm.environment.get();
+//pm.environment.set(); 
+
+Environment: a set of key-value pairs
+
+Snippets - script templates
+Postman tests are javascript code that is executed after receiving the response
+Pre request script: akan dieksekusi sebelum mengirimkan request
+Test: dieksekusi setelah menerima response
+
+environment dan variable?
+• Environment, untuk membuat variabel dengan nilai yang berbeda sesuai dengan lingkungan (environment) yang ingin diuji coba. Manfaatnya, kita tidak repot lagi mengganti-ganti URL atau nilai-nilai apapun untuk menguji API endpoint yang ada di localhost dan server online.
+• Dengan bantuan fitur environment ini, lebih mudah untuk menguji endpoint-endpoint yang ada pada aplikasi yang dibuat di beberapa lingkungan server yang berbeda.
+
+perbedaan kegunaan environment dan variable (dalam implementasinya)?
+debug (masih bingung)
+newman (masih bingung)
