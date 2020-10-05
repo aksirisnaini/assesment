@@ -1,0 +1,35 @@
+response:
+body (di dalamnya terdapat actual body yang dikembalikan dari server. bisa dilihat di pretty format atau raw atau format lain yang tersedia)
+• status
+• time
+• size
+
+Collection.
+1. collection: kumpulan api requests dan bisa disimpan di logical arrangement
+2. test: bisa memberikan script yang umum digunakan di keseluruhan request pada collection tersebut
+3. variable: menambahkan variabel yang digunakan di keseluruhan request pada collection tersebut
+4. monitor collection: run collection secara periodik (contoh: di interval 10 menit/5 menit dan mengecek response performance
+5. add folder di dalam collections: cara agar bisa melakukan beberapa logical grouping request di dalam collection
+
+How to run collection --done
+1. Klik run
+2. Pilih colletion, environment
+3. Tentukan jumlah pengulangan
+result:
+• fail dan pass
+• status, time, dan size
+• run summary: ringkasan result
+• export result (JSON)
+• retry: mengulangi run dengan konfigurasi yang sama
+
+variables
+• elemen (data store) yang bisa berbeda values
+
+WHY use variables
+to reuse values at multiple places
+avoid repetition
+to avoid re-work when value changes
+ 
+penggunaan variable
+contoh: menambahkan url sebagai variable-nya
+menggunakan double curly braces {{}}
