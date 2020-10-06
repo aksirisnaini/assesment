@@ -70,3 +70,13 @@ environment dan variable?
 perbedaan kegunaan environment dan variable (dalam implementasinya)?
 debug (masih bingung)
 newman (masih bingung)
+
+json: 
+• format pertukaran data tekstual yang sangat ringan
+• syntax nya sangat sederhana dan jelas (dibanding dengan xml)
+• dapat digunakan pada beragam bahasa pemrograman
+• tiap bahasa punya cara tersendiri untuk berinteraksi dengan json
+• dibuat berdasarkan format object pada js
+• digunakan untuk file konfig (tidak disarankan krn json tidak support syntax comment, biasanya file konfig butuh comment)
+• json = pasangan key dan value, yang disebut properti. key selalu dibungkus ""
+• json tidak memiliki method, sehingga tidak boleh membuat json yang terdapat function di dalamnya
