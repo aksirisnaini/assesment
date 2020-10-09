@@ -131,3 +131,53 @@ Selenium
 		2. Selenium (RC)
 		3. WebDriver
 		4. Selenium Grid
+
+7 Principles of Software Testing
+
+    Testing shows presence of defects
+    Exhaustive testing is not possible
+    Early testing
+    Defect clustering
+    Pesticide paradox
+    Testing is context dependent
+    Absence of errors fallacy
+
+
+any type of software testing type can be executed both manually as well using an automation tool.
+
+    Black Box Testing
+    White Box Testing
+    Unit Testing
+    System Testing
+    Integration Testing
+    Acceptance Testing
+
+How to perform Manual Testing
+• Read and understand the software project documentation/guides. Also, study the Application Under Test (AUT) if available.
+• Draft Test cases that cover all the requirements mentioned in the documentation.
+• Review and baseline the test cases with Team Lead, Client (as applicable)
+• Execute the test cases on the AUT
+• Report bugs.
+• Once bugs are fixed, again execute the failing test cases to verify they pass.
+
+
+1. Unit tests help to fix bugs early in the development cycle and save costs.
+2. It helps the developers to understand the code base and enables them to make changes quickly
+3. Good unit tests serve as project documentation
+4. Unit tests help with code re-use. Migrate both your code andyour tests to your new project. Tweak the code until the tests run again.
+
+How to write a Test Plan:
+
+    Analyze the product
+• Who will use the website?
+• What is it used for?
+• How will it work?
+• What are software/ hardware the product uses?
+    Design the Test Strategy
+    Define the Test Objectives
+    Define Test Criteria
+    Resource Planning
+    Plan Test Environment
+    Schedule & Estimation
+    Determine Test Deliverables
+
