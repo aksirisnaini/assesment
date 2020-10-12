@@ -1,0 +1,54 @@
+Selenium
+
+• open source otomatis framewoke yang digunakan untuk validasi web app dengan perbedaan browsers dan platforms
+• selenium bukan hanya satu tool tetapi serangkaian perangkat lunak, masing-masing bagian melayani kebutuhan pengujian yang berbeda dari suatu organization yang dimiliki
+• 4 tipe selenium
+		1. Selenium (IDE)
+		2. Selenium (RC)
+		3. WebDriver
+		4. Selenium Grid
+selenium rc dan webdriver jadi satu (selenium 2)
+
+selenium IDE
+• tersimple dan termudah untuk dipelajari
+• plugin Firefox yang dapat di instal semudah mungkin dengan plugin lain. Namun, karena kesederhanaannya, Selenium IDE sebaiknya hanya digunakan sebagai alat pembuatan prototipe. Jika ingin membuat kasus pengujian yang lebih canggih, harus menggunakan Selenium RC atau WebDriver
+• browser hanya di firefox
+• butuh pemahaman HTML dan DOM
+• bisa export test ke format yg bisa digunakan di selenium RC dan webdriver
+• memiliki bantuan bawaan dan modul laporan hasil tes
+• tidak dapat melakukan perulangan dan conditional operations
+
+selenium RC
+• Selenium RC adalah kerangka pengujian andalan dari seluruh proyek Selenium untuk waktu yang lama. 
+• bisa digunakan lintas browser dan lintas platform
+• dapat melakukan perulangan dan conditional operations
+• pengujian berbasis data
+• Complete API
+• bisa dengan mudah support browser baru
+• eksekusi lebih cepat drpd IDE
+• instalasi lebih complicated drpd IDE
+• harus memiliki pengetahuan programming
+• butuh selenium RC server untuk running
+• interaksi browser kurang realistis
+• hasil tidak konsisten dan menggunakan js
+• waktu eksekusi lebih lambat daripada webdriver
+
+webdriver
+• lebih modern dan pendekatan stabil dalam mengotomatiskan tindakan browser.
+• tidak seperti RC, webdriver tidak mengandalkan js untuk otomatisasi, tetapi mengontrol browser dengan berkomunikasi langsung dengannya.
+• instalasi lebih simple drpd RC (tetapi lebih complicated drpd IDE)
+• interaksi browser lebih realistis
+• tidak perlu komponen terpisah seperti RC server
+• waktu eksekusi lebih cepat drpd IDE dan RC
+• membutuhkan pengetahuan programming
+• tidak dengan mudah support browser baru
+• tidak memiliki mekanisme bawaan untuk mencatat pesan waktu proses dan menghasilkan hasil pengujian
+
+selenium grid
+• tool yang digunakan bersama dengan Selenium RC untuk menjalankan tes paralel di berbagai mesin dan browser yang berbeda secara bersamaan. Eksekusi paralel berarti menjalankan beberapa pengujian sekaligus.
+• fitur:
+1. Memungkinkan menjalankan pengujian secara bersamaan di beberapa browser dan environment.
+2. Sangat menghemat waktu.
+3. Memanfaatkan konsep hub-and-node. Hub bertindak sebagai sumber pusat perintah Selenium ke setiap node yang terhubung dengannya.
+
+gtmetrix --> weekly
