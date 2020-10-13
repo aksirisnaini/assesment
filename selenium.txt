@@ -52,3 +52,12 @@ selenium grid
 3. Memanfaatkan konsep hub-and-node. Hub bertindak sebagai sumber pusat perintah Selenium ke setiap node yang terhubung dengannya.
 
 gtmetrix --> weekly
+
+add extention selenium IDE
+• Test: Test terdiri dari 3 macam, jika klik maka akan muncul 3 opsi yaitu test(test case), test suites, dan executing. Test case adalah langkah-langkah uji coba yang akan dieksekusi Selenium di web tersebut dan test suite adalah kumpulan dari beberapa test case. Sedangkan executing adalah test yang sedang dieksekusi.
+• Add Test untuk menambah Test case
+• Play untuk menjalankan test case yang sudah direkam, untuk menjalankan semua test dalam test suite maka tekan button play yang berada paling kiri
+• Speed untuk mengatur kecepatan test
+• Command, perintah yang digunakan user dalam mengakses web seperti type untuk mengisi sebuah form, click untuk menekan button, dll
+• Target, tujuan yang telah dilakukan pada command seperti button, link dalam bentuk CSS maupun Xpath.
+• Value, nilai dari perintah yang telah dijalankan pada target, seperti isian dari form atau sebagainya.
