@@ -61,3 +61,7 @@ add extention selenium IDE
 • Command, perintah yang digunakan user dalam mengakses web seperti type untuk mengisi sebuah form, click untuk menekan button, dll
 • Target, tujuan yang telah dilakukan pada command seperti button, link dalam bentuk CSS maupun Xpath.
 • Value, nilai dari perintah yang telah dijalankan pada target, seperti isian dari form atau sebagainya.
+
+progress hari ini:
+- auto testing soizee.com dengan selenium IDE
+- mempelajari https://docs.katalon.com/katalon-studio/docs/record-web-utility.html#record-a-new-test-case
